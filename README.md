@@ -1,18 +1,18 @@
-# 🐧 Linux Server Setup with SSH Key Authentication
+# Linux Server Setup with SSH Key Authentication
 
-## 🎯 Project Goal
+##  Project Goal
 
 The goal of this project is to learn and practice the basics of Linux, particularly remote server setup and secure SSH access using key pairs.
 
 ---
 
-## ✅ What Was Done
+##  What Was Done
 
-- ✅ Created and configured a remote Linux server (Ubuntu 24.10).
-- ✅ Generated two separate SSH key pairs.
-- ✅ Added both public keys to the server.
-- ✅ Verified access using both private keys.
-- ✅ Configured the SSH client for easy access via aliases.
+-  Created and configured a remote Linux server (Ubuntu 24.10).
+-  Generated two separate SSH key pairs.
+-  Added both public keys to the server.
+-  Verified access using both private keys.
+-  Configured the SSH client for easy access via aliases.
 
 ---
 
@@ -26,7 +26,7 @@ Used [DigitalOcean](https://digitalocean.com) to create a simple droplet:
 
 ---
 
-## 🔐 Step 2: Generate Two SSH Key Pairs Locally
+##  Step 2: Generate Two SSH Key Pairs Locally
 
 On your local machine:
 
@@ -35,7 +35,7 @@ ssh-keygen -t ed25519 -f ~/.ssh/key1
 ssh-keygen -t ed25519 -f ~/.ssh/key2
 ```
 
-## 📤 Step 3: Add Public Keys to Remote Server
+##  Step 3: Add Public Keys to Remote Server
 
 To allow the server to authenticate using your SSH keys, you need to copy the public keys to the server.
 
@@ -59,7 +59,7 @@ Paste the contents of key1.pub and key2.pub, one per line.
     exit
     ```
 
-## 📤 Step 4: Test SSH Connection Using Both Keys
+##  Step 4: Test SSH Connection Using Both Keys
 
 1. **From your local machine:**:
 
