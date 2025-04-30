@@ -76,7 +76,7 @@ To simplify SSH access, you can create an SSH configuration file on your local m
    Open the SSH configuration file located at `~/.ssh/config`:
    ```bash
    nano ~/.ssh/config
-
+   ```
    ```ini
     Host server1-key
     HostName server-ip
