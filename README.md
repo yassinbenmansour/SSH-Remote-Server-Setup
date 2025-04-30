@@ -93,3 +93,6 @@ To simplify SSH access, you can create an SSH configuration file on your local m
 - To connect using the first SSH key (`key1`):
   ```bash
   ssh server1-key1
+
+
+https://roadmap.sh/projects/ssh-remote-server-setup
