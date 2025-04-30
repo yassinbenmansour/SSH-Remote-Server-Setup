@@ -43,7 +43,7 @@ To allow the server to authenticate using your SSH keys, you need to copy the pu
 
    ```bash
    ssh root@<your-server-ip>
-
+   ```
 - Then:
    ```bash
     mkdir -p ~/.ssh
@@ -62,10 +62,10 @@ Paste the contents of key1.pub and key2.pub, one per line.
 ##  Step 4: Test SSH Connection Using Both Keys
 
 1. **From your local machine:**:
-
+   ```bash
     ssh -i ~/.ssh/key1 root@<server-ip>
     ssh -i ~/.ssh/key2 root@<server-ip>
-
+   ```
 ## 5. Configure `~/.ssh/config` for Easy Access
 
 To simplify SSH access, you can create an SSH configuration file on your local machine. This allows you to connect to your server using aliases instead of typing the full command each time.
